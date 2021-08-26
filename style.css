@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-size: 15px;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 24vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 50px;
+}
+
+img {
+  width: 64px;
+  height: 40px;
+}
+
+.card:nth-of-type(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.card:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card:nth-of-type(1) > button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card:nth-of-type(2) > button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) > button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card:nth-of-type(1) > button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card:nth-of-type(2) > button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card:nth-of-type(3) > button:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 480px) {
+  #container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70vw;
+    height: 60vh;
+    overflow-y: hidden;
+  }
+
+  .card:nth-of-type(1) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card:nth-of-type(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
